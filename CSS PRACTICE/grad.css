@@ -1,0 +1,57 @@
+.text{
+    height: 300px;
+    width: 300px;
+    background-image: conic-gradient(
+    red 0% 50%,
+    blue 50% 75%,
+    green 75% 100%
+    );
+    border-radius: 50%; /*this is optional */
+}    
+.red{
+position: absolute;
+top:50px;
+left:180px;
+display: inline-block;
+color: white;
+}
+.blue{
+position: absolute;
+top: 200px;
+left:50px;
+display: inline-block;
+color: white;
+}
+.green{
+position: absolute;
+top: 50px;
+left:50px;
+display: inline-block;
+color: white;
+}
+.btn{
+    color:;
+    background-color: tomato;
+    width: 50px;
+    height: 20px;
+    border: none;
+    cursor:pointer ;
+    box-shadow: 2px 6px 8px grey;
+}
+.btn:hover{
+ background-color: white;
+ border: 3px solid gold;
+ color: aqua;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: tomato;
+    box-shadow: 10px 10px 5px grey ;
+}
+.box:hover{
+    background-color: aqua;
+}
+.text1{
+    text-shadow: 5px 5px 7px grey;
+}

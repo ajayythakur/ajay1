@@ -1,0 +1,22 @@
+.flex{
+    border: 2px soild black;
+    background-color: tomato;
+    height:200px;
+    width: 100%;
+    flex-wrap: wrap;
+    display: inline-block;
+}
+.b1{
+    width: 232px;
+    height: 210px;
+    border: 0px;
+    background-color: white;
+    margin-left: 202px; 
+}   
+.b2{
+    width: 232px;
+    height: 210px;
+    border: 0px;
+    background-color: red;
+    margin-left: 400px; 
+}   

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 300px;
+            width: 300px;
+            margin-left: 40%;
+            border: 1px solid black;
+            /* display: flex; */
+            /* justify-content: center; */
+            /* align-items: center; */
+        }
+        .num ,.out{
+            margin-top: 10px;
+        }
+        button{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <form action=""> -->
+            <input type="text" class="num" id="num1" placeholder="num1">
+            <input type="text" class="num" id="num2"  placeholder="num2"><br>
+            <button id="add">Add</button> 
+            <button id="sub">Subtract</button> <br>
+            <button id="div">Division</button> <br>
+            <button id="multiply">Multiply</button>
+            <input type="text" class="out" id="output" value="output" placeholder="outputt">
+        <!-- </form> -->
+        <script>
+            let num1Element=document.getElementById("num1");
+            let num2Element=document.getElementById("num2");
+            let outputElement=document.getElementById("output");
+            let addElement=document.getElementById("add");
+            let sub=document.getElementById("sub");
+            let div=document.getElementById("div");
+            let mul=document.getElementById("multiply");
+
+            addElement.addEventListener("click", function() {
+                let num1Value=num1Element.value;
+                let num2Value=num2Element.value;
+                outputElement.value=Number(num1Value) + Number(num2Value);
+            });
+
+            sub.addEventListener("click", function(){
+                let num1Value=num1Element.value;
+                let num2Value=num2Element.value;
+                outputElement.value=Number(num1Value) - Number(num2Value);
+            });
+            div.addEventListener("click", function(){
+                let num1Value=num1Element.value;
+                let num2Value=num2Element.value; 
+                outputElement.value=Number(num1Value) / Number(num2Value);
+            });
+            mul.addEventListener("click", function(){
+                let num1Value=num1Element.value;
+                let num2Value=num2Element.value;
+                outputElement.value=Number(num1Value) * Number(num2Value);
+            });
+
+        </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+#verticalText {
+    writing-mode: vertical-lr;
+    margin-left: 45%;
+    background-color: aqua;
+  }
+  #headText {
+    font-size: 30px;
+  }
+  #siren {
+    font-weight: 700;
+  }
+  #NavBar {
+    display: flex;
+    justify-content: space-around;
+    font-weight: 500;
+  }
+  .hr {
+    opacity: 0.2;
+    height: 3px;
+    background-color: grey;
+  }

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #clock{
+            /* background-color: black; */
+            height: 100px;
+            width: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-around;
+            column-gap: 5px;
+        }
+        .box{
+            justify-items: center;
+            align-items: center;
+            justify-content: center;
+            justify-self:center;
+            text-align: center;
+            /* margin-top: auto; */
+            color: black;
+            background-color: pink;
+            height: 70px;
+            width: 70px;
+        }
+        #text{
+            height: 50px;
+            width: 100px;
+            background-color: rebeccapurple;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="clock"> Time - 
+        <div id="box1" class="box">10</div>
+        <div id="box2" class="box">00</div>
+        <div id="box3" class="box">00</div>
+        <div id="box4" class="box">AM</div>
+        <div id="box5" class="box"></div>
+    </div>
+    <select name="" id="dropdown">
+        <option value="1pm-2pm">1pm-2pm</option>
+    </select>
+    <button id="btn">Set</button>
+
+    <div id="text"></div>
+    <script>
+        function clock(){
+            let hr=document.getElementById("box1");
+            let mn=document.getElementById("box2");
+            let sc=document.getElementById("box3");
+            let ampm=document.getElementById("box4")
+            let day=document.getElementById("box5")
+
+
+            let tym=new Date();
+            let hour=tym.getHours();
+            let min=tym.getMinutes();
+            let sec=tym.getSeconds();
+            let dy=tym.getDay();
+            hr.innerText=`${hour} \n hours`;
+            mn.innerText=`${min} \n min`;
+            sc.innerText=`${sec} \n sec`;
+            day.innerText=`${dy} \n day of week`;
+
+            if(hour>12){
+                ampm.innerText="PM";
+            }
+
+        }
+        setInterval(function(){
+                clock()
+            },1000);
+
+            let text=document.getElementById("text");
+            let drop=document.getElementById("dropdown").value;
+            let btn=document.getElementById("btn");
+            btn.addEventListener("click", function(){
+                    text.innerText=drop;
+            })
+
+    </script>
+</body>
+</html>

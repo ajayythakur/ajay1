@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://kit.fontawesome.com/5384685fcb.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="index.css">
+  <title>To-Do-app</title>
+</head>
+<body>
+  <div id="main-container">
+    <div class="header-content">
+      <div class="main-heading" id="main-heading">
+        <h1>Task <span style="font-weight: 40" >List</span> </h1>
+      </div>
+        <span id="middletxt"> AJay</span>
+      <div>
+        <span><i class="fas fa-plus-circle" onclick="addTaskInput()"></i></span>
+        <span id="add-task-name"> Add Item</span>
+      </div>
+    </div> <br><br>
+    <div id="noItemMsg">
+      <p>No Item in the todo list</p>
+    </div>
+    <div id="list-container"></div>
+  </div>
+
+
+  <div id="task-input-container">
+ <div class="task-input-heading">
+ <h1>Add New List</h1>
+ </div>
+ <div>  <input type="text" name="ListName" id="list" placeholder="Add New List" /> </div>
+ <br />
+<div class="task-input-button">
+      <p id="addbtn" onclick="addDataObj()">ADD</p>
+      <p id="closebtn" onclick="closeDataObj()">Close</p>
+    </div>
+  </div>
+
+
+
+  <div id="minitask-input-container">
+    <div class="task-input-heading">
+      <h1>Add New Item</h1>
+    </div>
+    <div>
+      <input type="text" name="ListName" id="minilist" placeholder="Add New Item" />
+    </div>
+    <br />
+    <div class="task-input-button">
+      <p id="miniaddbtn">ADD</p>
+      <p>Close</p>
+    </div>
+  </div>
+  <span id="backbtn">Back</span>
+
+
+  <script src="index.js"></script>
+</body>
+
+</html>

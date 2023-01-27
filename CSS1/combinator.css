@@ -1,0 +1,57 @@
+/* .parent div {
+    color: blue;
+    border: 1px solid green;
+
+}
+.parent b{
+    color: pink;
+    border: 1px solid brown;
+}
+.parent .para {
+    border:1px solid green;
+    color: black;
+}
+.parent .para{
+    color: red;
+}
+.parent .child{
+    color:aqua
+}
+.parent .child b{
+    color: aquamarine;
+} */
+
+/* ">" SELECTOR */
+/* .parent > .grand-child {
+    color: brown;
+
+}
+.child > .grand-child{
+    color: red;
+
+}
+.parent  .grand-child div {
+    color: blue;
+} */
+ /* .two + .two + .two{
+    color: blue;
+}  */
+
+/* with and without span in between the class one and two */
+ /* .one + .two {
+    color: orange;
+} */
+
+/* two classes lying next tpo each other */
+/* .two + .two {
+    color: blue;
+} */
+
+/* works for two lying after one or even span is lying in between them */
+/* .one ~ .two {
+    color: green;
+} */
+
+/* .one + .two ~ .two  div {
+    color: magenta;
+}  */

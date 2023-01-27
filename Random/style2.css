@@ -1,0 +1,53 @@
+/*.test{
+    width:100px;
+    height:100px;
+    background-color: blue;
+    color: white;
+    /*position: static;*/
+    /*position static is a default for the property positin, for static postion, offset values are not applicable*/
+    /*we have four offset value for the positon. They are Top Left Right Bottom. These are only applicable to Non Static position*/
+    /*position: relative;
+    /* For postion relative, the elements positon themselves with respect to the original position */
+    /*top: 100px;
+    left: 100px;
+    bottom: 100px;
+    right: 100px; */
+    /*TOp And Left have higher prioprty over bottom and right resp. Only if top and left offsets are not present , the bottom or right is given priority. */
+    /* vertical movement - top over bottom, horizontal-left over right */
+    /* top-left over top-right and bottom-left over bottom-right*/
+    /*position: absolute;
+    top: ;
+    left: ;
+    right: ;
+    bottom: ;
+    /*for positon absolute, they don't occupy space of it's on */
+    /* All the four offset can be applied together, provided th eelement isn't restricted with each their width and height property */
+    /* They position themselves with respect to Browser's outline*/
+.parent{
+    height: 400px;
+    width: 400px ;
+    background-color: black; 
+    position: relative;
+
+}
+.child{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    /*left:0; */
+    
+
+}
+child2{
+    float: left;
+    width: 400px;
+    height: 400px;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    /*left:0; */
+    right: ;
+}
+}

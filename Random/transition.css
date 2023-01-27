@@ -1,0 +1,31 @@
+.box{
+    height: 200px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid red;
+    transition: all;
+    /* transition-duration: 2s; */
+    /* transition-timing-function: ease-in-out; */
+    animation-name: trans-anim;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes trans-anim{
+    50%{
+        transform: scaleX(10%);
+    }
+    100%{
+        transform: translate(1200px);
+    }
+}
+.box:hover{
+    /* transform: rotate(360deg); */
+    background-color: red;
+    font-size: 30px;
+    height: 400px;
+    width: 400px;
+    border-radius: 50px;
+}

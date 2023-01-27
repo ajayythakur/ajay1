@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #8a11bf;
+        }
+        .box{
+            top: 42px;
+            left: 706px;
+            width: 538px;
+            height: 130px;
+            background-color:white;
+            position: relative;
+            display: flex;
+            column-gap: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+        .item{
+        /* color: red; */
+        }
+        .time{
+            color: #3D087B;
+            font: normal normal 600 20px/32px Manrope;
+            margin-left:-60px ;
+            margin-right: 80px;
+        }
+        .hr{
+            position: absolute;
+            top: 20px;
+            left: 170px;
+            text-align: center;
+            color: #8a11bf;
+            font: normal normal normal 36px/43px Barlow;
+            
+        }
+        .symbol{
+            position: relative;
+            bottom: 30px;
+            font-size: 30px;
+            color: #8a11bf;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"><span class="time">Time</span> 
+    
+        <div class="item"><img src="timeline.svg" alt=""><span class="hr">10 <br> hours</span>
+        <span class="symbol">:</span></div>
+        <div class="item"><img src="timeline.svg" alt=""></div>
+        <div class="item"><img src="timeline.svg" alt=""></div>
+    
+
+    </div>
+</body>
+</html>

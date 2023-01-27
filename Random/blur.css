@@ -1,0 +1,16 @@
+
+.container{
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+    color: red;
+    filter: blur(2px);
+}
+.name{
+    height: 300px;
+    width: 300px;
+    position: relative;
+    top:0%;
+    left: 50%;
+    bottom: 200px;
+}

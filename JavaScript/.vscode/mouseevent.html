@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading">My Name is Ajay</h1>
+    <script>
+        let heading=document.getElementById("heading");
+        // heading.addEventListener("mouseenter" ,function(){
+        //     heading.style.color="green";
+        // })
+        heading.addEventListener("mouseleave",function(){
+            heading.style.color="tomato";
+        })
+        heading.addEventListener("mouseover",function(){
+            heading.style.backgroundColor="red";
+            heading.style.color="white";
+            heading.style.fontSize="40px";
+            heading.style.textAlign="center"
+            heading.innerText="Caution!"
+            
+        })
+    </script>
+</body>
+</html>

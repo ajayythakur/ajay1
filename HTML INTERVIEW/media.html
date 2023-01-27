@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex{
+            display: flex;
+            flex-direction: row;
+            row-gap: 10px;
+            column-gap: 10px;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+            color: black;
+        }
+        @media (min-width:350px) and (max-width:500px){
+            .flex{
+                flex-direction: column;
+            }
+        }
+        @media (min-width:500px) and (max-width:700px){
+            .box{
+                background-color: tomato;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="flex">
+        <div class="box">Lorem ipsum dolor sit amet.</div>
+        <div class="box">Lorem ipsum dolor sit amet.</div>
+        <div class="box"> Lorem ipsum dolor sit amet.</div>
+    </div>
+</body>
+</html>

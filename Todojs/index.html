@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo JS</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="main-container">
+        <div class="header">
+            <h1 id="back_icon">Task <span style="font-weight: 400; color: purple;">List</span></h1>
+            <div id="add_task" onclick="popUp()">
+                <h4><i class="fa-solid fa-circle-plus"></i> Add Item</h4>
+            </div>
+        </div>
+
+        <div id="msgBox"></div>
+
+       
+
+        <div id="cards">
+            <div class="card" id="${value.id}">
+                <button id="card_title"> </button>  
+                <div class="content">
+                    <div class="text">
+
+                    </div>
+                    <!-- <h2>dinner <span ><button id="btn_mark">Mark Done</button></span></h2> -->
+                </div>
+                <div class="option">
+                    <button id="delete"><i class="fa-solid fa-trash"></i></button>
+                    <button id="edit"><i class="fa-solid fa-pen-to-square"></i></button>
+                </div>
+            </div>
+
+            <!-- <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div> -->
+        </div>
+
+    </div>
+    <div class="main-popup">
+        <div class="popup">
+            <h2 style="color: purple;" >Add new Task</h2>
+            <input type="text" id="input_text" placeholder="Add New Task"><br>
+            <button id="btn_add">Add</button>
+            <button id="btn_close" onclick="popUp_close()">Close</button>
+        </div>
+    </div>
+
+    <div class="list-popup">
+        <div class="list_popup">
+            <h2 style="color: purple;" >Add New Item</h2>
+            <input type="text" id="input_list" placeholder="Add New Item"><br>
+            <button id="btn_add_list" onclick="main_list()">Add</button>
+            <button id="btn_close_list" onclick="popUp_close_list()">Close</button>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

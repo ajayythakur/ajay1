@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .transform{
+            margin: auto;
+            height: 150px;
+            width: 150px;
+            border: 2px solid red;
+            animation-name: transanim;    
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes transanim{
+            50%{           
+             /* transform: translateX(-50px); */
+             transform: translateY(100px);
+            }
+            100%{
+                transform: translateX(500px);
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="transform"></div>
+</body>
+</html>
